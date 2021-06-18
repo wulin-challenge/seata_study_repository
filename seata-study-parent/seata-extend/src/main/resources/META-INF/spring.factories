@@ -1,0 +1,6 @@
+# Application Context Initializers
+org.springframework.context.ApplicationContextInitializer=\
+com.bjhy.seata.extend.intercepter.ExtendIntercepterInitializer
+
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+com.bjhy.seata.extend.SeataDataSourceAutoConfiguration

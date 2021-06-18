@@ -1,0 +1,49 @@
+#dubbo的相关配置
+dubbo:
+  zookeeper-address: wulinThinkPad:2181
+  application:
+    name: seata-dubbo-consumer
+
+#嵌入式容器的相关配置
+server:
+  context-path: /seata-dubbo-consumer
+  port: 8555
+
+
+hibernate:
+  show_sql: true
+
+freemarker:
+  cache: true
+  
+cache: 
+  toolkit: 
+    open: false
+    
+spring: 
+  application: 
+    name: seata-dubbo-consumer
+  autoconfigure: 
+    exclude: 
+     - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+
+# application.yml 中的配置的优先级高于     ${user.dir}/config/file.conf 配置文件,
+# 即可以在 application.yml的配置项可以覆盖${user.dir}/config/file.conf中的配置
+seata: 
+  txServiceGroup: my_consumer_group
+  config: 
+    type: file
+    file: 
+      name: ${user.dir}/config/file.conf
+  service: 
+    vgroupMapping: 
+      my_consumer_group: default
+    # 这里与file.conf中有些不一样
+    grouplist: 
+      default: wulinThinkPad:8091
+    disableGlobalTransaction: false
+    
+    
+    
+    
+    

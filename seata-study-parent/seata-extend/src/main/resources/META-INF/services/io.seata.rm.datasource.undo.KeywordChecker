@@ -1,0 +1,3 @@
+com.bjhy.seata.extend.druid.mariadb.MariadbKeywordChecker
+com.bjhy.seata.extend.druid.dm.DmKeywordChecker
+com.bjhy.seata.extend.druid.kingbase.KingbaseKeywordChecker

@@ -1,0 +1,3 @@
+com.bjhy.seata.extend.druid.mariadb.MariaDBOperateRecognizerHolder
+com.bjhy.seata.extend.druid.dm.DmOperateRecognizerHolder
+com.bjhy.seata.extend.druid.kingbase.KingbaseOperateRecognizerHolder

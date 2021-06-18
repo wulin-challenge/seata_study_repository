@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>商品</title>
+<link href="${request.contextPath}/css/common_biz.css" rel="stylesheet" type="text/css" />
+${jsContext}${jquery}${jqueryUI}${date97}${appEasyUI}${easyUI}${jqGrid}${toast}${zTree}
+${titanUtils}
+</head>
+<body>
+	<div class="pd">
+		<div class="toolkit">
+			<ul class="toolkit_ul_right">
+				<li>关键字： <input type="text" id="commonSearchInput" placeholder="编号|姓名,多个逗号隔开">
+				</li>
+				<li><input type="button" class="btn_blue" id="commonSearchBtn"
+					value="查询" /></li>
+				<li><input type="button" class="btn_blue" id="commonRetrieveBtn"
+					value="检索" /></li>
+			</ul>
+			<ul class="toolkit_ul_left">
+				<li><input type="button" class="btn_blue" id="commonViewBtn"
+					value="查看" /></li>
+				<li><input type="button" class="btn_blue" id="commonShowAddBtn"
+					value="新增" /></li>
+				<li><input type="button" class="btn_blue" id="commonShowEditBtn"
+					value="编辑" /></li>
+				<li><input type="button" class="btn_blue" id="commonDelBtn"
+					value="删除" /></li>
+				<li><input type="button" class="btn_blue" id="commonExportBtn"
+					value="导出" /></li>
+				<li><input type="button" class="btn_blue" id="commonRefreshBtn"
+					value="刷新" /></li>
+			</ul>
+		</div>
+		<div class="data_grid clear">
+			<table id="commonList"></table>
+			<div id="commonPager"></div>
+		</div>
+		
+		<!-- 详细表单 -->
+		<div id="commonDetail" class="form"
+			style="width: 600px; display: none;">
+			<div id="form_tabs" class="easyui-tabs">
+				<div title="商品数据" style="padding: 10px;">
+					<!-- 基础数据表单 -->
+					<div id="commonDetail_form">
+						<fieldset>
+							<legend>商品数据表单</legend>
+							<form id="commonDetailForm" action="" method="post">
+								<input type="hidden" name="id" id="id" />
+								<input type="hidden" name="baseInfo.id" id="criminalId" />
+								<table class="t4">
+								    <tr>
+								      <th>商品名称</th>
+								      <td><input class="easyui-validatebox" data-options="required:true,validType:'maxLength[100]'" type="text" id="goodsName" name="goodsName"/></td>
+								      <th>价格</th>
+								      <td><input class="easyui-validatebox" data-options="required:false,validType:'maxLength[10]'" type="text" id="price" name="price"/></td>
+								      <th>商品库存数量</th>
+								      <td><input class="easyui-validatebox" data-options="required:false,validType:'integerLength[0,10]'" type="text" id="goodsNumber" name="goodsNumber"/></td>
+								    </tr>
+								</table>
+								<div class="btn_center" id="commonDetailBtnKit">
+									<input type="button" class="btn_blue" id="commonSaveBtn"
+										value="保存" /> <input type="button" class="btn_blue  pd_l10"
+										id="commonResetBtn" value="重置" />
+								</div>
+							</form>
+						</fieldset>
+					</div>
+				</div>
+				<!-- 上传附件 start -->
+				<div id="attchmentDiv" title="业务附件" style="padding: 10px;">
+					<div id="attchmentId"></div>
+				</div>
+				<!-- 上传附件 end-->
+			</div>
+		</div>
+	</div>
+</body>
+<script type="text/javascript" src="${request.contextPath}/js/goodsEntity/goods_entity_index.js"></script>
+</html>

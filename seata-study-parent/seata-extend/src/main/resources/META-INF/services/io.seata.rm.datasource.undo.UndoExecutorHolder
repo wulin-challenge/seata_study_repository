@@ -1,0 +1,3 @@
+com.bjhy.seata.extend.druid.mariadb.MariadbUndoExecutorHolder
+com.bjhy.seata.extend.druid.dm.DmUndoExecutorHolder
+com.bjhy.seata.extend.druid.kingbase.KingbaseUndoExecutorHolder

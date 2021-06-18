@@ -1,0 +1,82 @@
+/*沉底并悬浮*/
+.button_center_2{
+	text-align: center;
+    padding: 15px;
+    position: absolute;
+    bottom: 2px;
+    vertical-align: middle;
+    width:100%;
+}
+.destoryForm{
+	padding-top:10px;
+}
+fieldset {
+	border:1px solid #8cd4f2;
+	border-bottom:1px solid #8cd4f2;
+	border-right:none;
+	border-left:none;
+	margin-top:10px;
+	padding-bottom:8px;}
+legend{
+	padding: 5px 15px;
+    background-color:#E0ECFF;
+    border-radius: 2px;
+    margin-bottom:5px;
+    border:1px solid #8cd4f2;}
+	
+table.t5,table.t5_1,table.t4_1{
+	width: 100%;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	border-collapse: collapse;
+}
+table.t5 th {
+	/*border: 1px solid #DFE5E7;*/
+	border-collapse: collapse;
+	/*background-color: #f4f4f4;*/
+	height: 20px;
+	text-align: right;
+	font-weight: normal;
+	width: 8%;
+	text-align:center;
+}
+table.t5 td {
+	/*border: 1px solid #DFE5E7;*/
+	border-collapse: collapse;
+	text-align: left;
+	/*padding: 3px;*/
+	width: 12%;
+	background-color: #FFFFFF
+}
+
+table.t5 td input,table.t5_1 td input{
+	width:90%;
+	width:90%;}
+.table.t4_1{
+	border-bottom:1px solid #8cd4f2;
+	margin-bottom:10px;
+}
+.destoryForm{
+	/* border-bottom:1px solid #8cd4f2; */
+	padding-bottom: 10px;
+}
+table.t4_1 th {
+	border-collapse: collapse;
+	height: 20px;
+	text-align: right;
+	font-weight: normal;
+	width: 8%;
+	/*padding: 3px;*/
+}
+table.t4_1 td {
+	/*border: 1px solid #DFE5E7;*/
+	border-collapse: collapse;
+	text-align: left;
+	/*padding: 3px;*/
+	width: 14%;
+	padding-left:5px;
+	background-color: #FFFFFF
+}
+	
+table.t5 td input{width:90%;}

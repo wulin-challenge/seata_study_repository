@@ -1,0 +1,49 @@
+
+#dubbo的相关配置
+dubbo:
+  zookeeper-address: wulinThinkPad:2181
+  port: 28888
+  application:
+    name: seata-dubbo-provider
+
+#嵌入式容器的相关配置
+server:
+  context-path: /seata-dubbo-provider
+  port: 8556
+
+hibernate:
+  show_sql: true
+
+freemarker:
+  cache: true
+
+cache: 
+  toolkit: 
+    open: false
+
+spring: 
+  application: 
+    name: seata-dubbo-provider
+  autoconfigure: 
+    # exclude: 
+    # - org.springframework.boot.autoconfigure.jdbc.DataSourceAutoConfiguration
+     
+
+seata: 
+  registry: 
+    type: file
+  txServiceGroup: my_provider_group
+  config: 
+    type: file
+    # file: 
+      # 经过调试得知 这个 config.file.name仅仅是一个名称而已,没有实际的作用
+      # name: ${user.dir}/config/file.conf
+  service: 
+    vgroupMapping: 
+      my_provider_group: default
+    # 这里与file.conf中有些不一样
+    grouplist: 
+      default: wulinThinkPad:8091
+    disableGlobalTransaction: false
+    
+    

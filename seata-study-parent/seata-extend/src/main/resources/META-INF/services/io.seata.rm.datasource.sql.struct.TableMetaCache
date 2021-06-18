@@ -1,0 +1,3 @@
+com.bjhy.seata.extend.druid.mariadb.MariadbTableMetaCache
+com.bjhy.seata.extend.druid.dm.DmTableMetaCache
+com.bjhy.seata.extend.druid.kingbase.KingbaseTableMetaCache

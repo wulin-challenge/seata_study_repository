@@ -1,0 +1,12 @@
+
+# 家
+http://127.0.0.1:8555/seata-dubbo-consumer/accountEntity/executePurchase?goodsId=bafa85bcdc814f9085164a351065d514&accountId=f39ddfd2c5e048d8b4226375f9187d79&number=1
+
+#公司
+http://127.0.0.1:8555/seata-dubbo-consumer/accountEntity/executePurchase?goodsId=3276bf5e49b440699ef8349f5e298d3f&accountId=46ca6dfcbd42495cb1410b2c5ec2d33d&number=1
+
+
+#公司的mariaDB
+http://127.0.0.1:8555/seata-dubbo-consumer/accountEntity/executePurchase?goodsId=e6bd96659abd45afa11a7f372908ddd2&accountId=0dc1db2c12014b46bc2a16bbc667a9ba&number=1
+
+

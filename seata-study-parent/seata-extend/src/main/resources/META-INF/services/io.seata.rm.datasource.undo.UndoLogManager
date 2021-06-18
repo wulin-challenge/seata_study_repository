@@ -1,0 +1,3 @@
+com.bjhy.seata.extend.druid.mariadb.MariadbUndoLogManager
+com.bjhy.seata.extend.druid.dm.DmUndoLogManager
+com.bjhy.seata.extend.druid.kingbase.KingbaseUndoLogManager
